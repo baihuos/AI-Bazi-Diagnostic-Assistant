@@ -1,0 +1,31 @@
+{"level":"error","message":"登录失败，手机号: 13784566917, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T12:47:02.306Z"}
+{"level":"error","message":"登录失败，手机号: 13784566917, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T12:49:24.963Z"}
+{"level":"error","message":"登录失败，手机号: 17800336829, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T12:50:26.716Z"}
+{"level":"error","message":"登录失败，openid: wx123456789, 错误: User.findByOpenid is not a function","timestamp":"2025-04-07T12:55:11.899Z"}
+{"level":"error","message":"登录失败，openid: wx123456789, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T13:01:20.211Z"}
+{"level":"error","message":"登录失败，openid: wx123456789, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T13:06:44.015Z"}
+{"level":"error","message":"登录失败，openid: wx123456789, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T13:06:57.969Z"}
+{"level":"error","message":"创建用户档案失败，用户ID: undefined, 错误: Column 'user_id' cannot be null","timestamp":"2025-04-07T13:15:20.407Z"}
+{"level":"error","message":"八字诊断失败，用户ID: undefined, 错误: Column 'user_id' cannot be null","timestamp":"2025-04-07T13:15:20.409Z"}
+{"level":"error","message":"创建用户档案失败，用户ID: 4, 错误: Incorrect datetime value: '1990-01-01T12:00:00Z' for column 'birth_date' at row 1","timestamp":"2025-04-07T13:38:05.001Z"}
+{"level":"error","message":"八字诊断失败，用户ID: 4, 错误: Incorrect datetime value: '1990-01-01T12:00:00Z' for column 'birth_date' at row 1","timestamp":"2025-04-07T13:38:05.003Z"}
+{"level":"error","message":"创建用户档案失败，用户ID: 4, 错误: Incorrect datetime value: '1990-01-01T12:00:00Z' for column 'birth_date' at row 1","timestamp":"2025-04-07T13:39:04.427Z"}
+{"level":"error","message":"八字诊断失败，用户ID: 4, 错误: Incorrect datetime value: '1990-01-01T12:00:00Z' for column 'birth_date' at row 1","timestamp":"2025-04-07T13:39:04.428Z"}
+{"level":"error","message":"登录失败，username: undefined, 错误: User.findByUsername is not a function","timestamp":"2025-04-08T05:54:27.220Z"}
+{"level":"error","message":"登录失败，username: undefined, 错误: User.findByUsername is not a function","timestamp":"2025-04-08T05:54:32.420Z"}
+{"level":"error","message":"创建用户失败，openid: [object Object], 错误: Column count doesn't match value count at row 1","timestamp":"2025-04-08T06:03:36.762Z"}
+{"level":"error","message":"微信登录失败，错误: Column count doesn't match value count at row 1","timestamp":"2025-04-08T06:03:36.766Z"}
+{"level":"error","message":"创建用户失败，username: newuser, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:27:54.048Z"}
+{"level":"error","message":"用户注册失败，username: newuser, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:27:54.070Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:29:11.752Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:29:11.753Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:30:49.784Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:30:49.787Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:31:24.726Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:31:24.727Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T10:47:03.479Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T10:47:03.496Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T10:47:33.890Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T10:47:33.896Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T11:01:05.195Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T11:01:05.197Z"}
