@@ -1,4 +1,3 @@
-// 引入 express-validator
 const { body, validationResult } = require('express-validator');
 
 // 登录验证规则
@@ -30,13 +29,26 @@ const paymentValidationRules = () => [
     body('amount').isFloat({ min: 0 }).withMessage('金额必须为正数')
 ];
 
+// 手动创建八字记录验证规则
+const createRecordValidationRules = () => [
+    body('birthDate').notEmpty().withMessage('出生日期不能为空').isISO8601().withMessage('出生日期格式错误'),
+    body('dayMaster').notEmpty().withMessage('日主不能为空'),
+    body('elements').isObject().withMessage('elements 必须为对象'),
+    body('conflicts').isObject().withMessage('conflicts 必须为对象'),
+    body('aiComment').notEmpty().withMessage('AI评论不能为空')
+];
+
 // 验证结果处理
 const validate = (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-        return res.status(400).json({ error: errors.array()[0].msg });
+        return res.status(400).json({
+            code: 400,
+            message: errors.array()[0].msg,
+            data: null
+        });
     }
     next();
 };
 
-module.exports = { loginValidationRules,registerValidationRules, baziValidationRules, paymentValidationRules, validate };
+module.exports = { loginValidationRules, registerValidationRules, baziValidationRules, paymentValidationRules, createRecordValidationRules, validate };

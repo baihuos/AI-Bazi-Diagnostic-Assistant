@@ -13,6 +13,7 @@ const paymentRouter = require('./routes/payment');
 // 引入中间件
 const { authMiddleware, authErrorHandler } = require('./middleware/auth');
 const errorHandler = require('./middleware/errorHandler');
+require('dotenv').config();
 var app = express();
 
 // view engine setup
