@@ -4,7 +4,7 @@ const { body, validationResult } = require('express-validator');
 const loginValidationRules = () => [
     body('username').notEmpty().withMessage('用户名不能为空'),
     body('password').notEmpty().withMessage('密码不能为空'),
-    body('code').optional().notEmpty().withMessage('微信登录 code 不能为空') // 微信登录时使用
+    body('code').optional().notEmpty().withMessage('微信登录 code 不能为空')
 ];
 
 // 注册验证规则
@@ -38,6 +38,11 @@ const createRecordValidationRules = () => [
     body('aiComment').notEmpty().withMessage('AI评论不能为空')
 ];
 
+// 八字模拟验证规则
+const baziSimulateValidationRules = () => [
+    body('birthDate').notEmpty().withMessage('出生日期不能为空').isISO8601().withMessage('出生日期格式错误')
+];
+
 // 验证结果处理
 const validate = (req, res, next) => {
     const errors = validationResult(req);
@@ -51,4 +56,4 @@ const validate = (req, res, next) => {
     next();
 };
 
-module.exports = { loginValidationRules, registerValidationRules, baziValidationRules, paymentValidationRules, createRecordValidationRules, validate };
+module.exports = { loginValidationRules, registerValidationRules, baziValidationRules, paymentValidationRules, createRecordValidationRules, baziSimulateValidationRules, validate };
