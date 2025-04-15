@@ -16,7 +16,7 @@ const authMiddleware = jwt({
         return null;
     }
 }).unless({
-    path: ['/', '/api/auth/login', '/api/auth/wx-login'] // 不需要认证的路由
+    path: ['/', '/api/auth/login', '/api/auth/wx-login','/api/auth/register'] // 不需要认证的路由
 });
 
 // JWT 错误处理
