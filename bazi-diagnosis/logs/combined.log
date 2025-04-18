@@ -42,3 +42,28 @@
 {"level":"info","message":"创建用户成功，username: admin, 用户ID: 42","timestamp":"2025-04-08T11:02:21.118Z"}
 {"level":"info","message":"用户注册成功，username: admin","timestamp":"2025-04-08T11:02:21.181Z"}
 {"level":"info","message":"用户登录成功，username: admin","timestamp":"2025-04-08T11:03:38.376Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /src/views/index.html, 错误: No authorization token was found","timestamp":"2025-04-09T07:40:41.049Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /favicon.ico, 错误: No authorization token was found","timestamp":"2025-04-09T07:40:41.180Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:02:37.567Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:05:48.988Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:09:47.439Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:10:11.061Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/api, 错误: No authorization token was found","timestamp":"2025-04-10T07:26:06.056Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:32:24.058Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:32:38.542Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /register, 错误: No authorization token was found","timestamp":"2025-04-16T12:01:45.879Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:03:26.384Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:15:28.007Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:18:05.792Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:20:42.091Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:29:13.151Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:56:55.989Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:58:19.155Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /auth/api/register, 错误: No authorization token was found","timestamp":"2025-04-16T13:04:37.730Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /auth/register, 错误: No authorization token was found","timestamp":"2025-04-16T13:18:58.379Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T13:22:05.699Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/api/register, 错误: No authorization token was found","timestamp":"2025-04-16T13:40:36.992Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/api/register, 错误: No authorization token was found","timestamp":"2025-04-17T00:53:32.230Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:37:21.903Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:37:38.552Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:38:11.554Z"}
