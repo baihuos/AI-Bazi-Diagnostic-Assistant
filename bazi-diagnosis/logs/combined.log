@@ -91,3 +91,5 @@
 {"level":"info","message":"八字计算成功，birthDate: 2000-01-01T12:00:00Z","timestamp":"2025-04-10T11:10:32.477Z"}
 {"level":"info","message":"创建八字分析记录成功，userId: 43, 记录ID: 32","timestamp":"2025-04-10T11:10:45.433Z"}
 {"level":"info","message":"八字诊断成功，userId: 43, 记录ID: 32","timestamp":"2025-04-10T11:10:45.434Z"}
+2025-04-15 20:57:59 [INFO]: 用户登录成功,id:42,username: admin
+2025-04-15 20:58:47 [INFO]: 用户登录成功,id:43,username: 杨帆
