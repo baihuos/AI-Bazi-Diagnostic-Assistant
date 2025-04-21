@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
 const baziRouter = require('./routes/bazi');
+const APIRouter = require('./routes/api');
 const paymentRouter = require('./routes/payment');
 // 引入中间件
 const { authMiddleware, authErrorHandler } = require('./middleware/auth');
@@ -29,7 +30,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/api', APIRouter);
 // JWT 认证中间件
+
 app.use(authMiddleware);
 app.use(authErrorHandler);
 // 路由配置
@@ -38,6 +41,7 @@ app.use('/users', usersRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/bazi', baziRouter);
 app.use('/api/payment', paymentRouter);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

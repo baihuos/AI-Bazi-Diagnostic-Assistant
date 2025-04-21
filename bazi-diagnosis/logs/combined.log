@@ -93,3 +93,72 @@
 {"level":"info","message":"八字诊断成功，userId: 43, 记录ID: 32","timestamp":"2025-04-10T11:10:45.434Z"}
 2025-04-15 20:57:59 [INFO]: 用户登录成功,id:42,username: admin
 2025-04-15 20:58:47 [INFO]: 用户登录成功,id:43,username: 杨帆
+{"level":"warn","message":"登录失败，手机号: undefined, 原因: 验证码错误","timestamp":"2025-04-07T12:43:20.799Z"}
+{"level":"warn","message":"登录失败，手机号: 13784566917, 原因: 验证码错误","timestamp":"2025-04-07T12:44:35.008Z"}
+{"level":"warn","message":"登录失败，手机号: 13784566917, 原因: 验证码错误","timestamp":"2025-04-07T12:46:38.606Z"}
+{"level":"error","message":"登录失败，手机号: 13784566917, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T12:47:02.306Z"}
+{"level":"error","message":"登录失败，手机号: 13784566917, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T12:49:24.963Z"}
+{"level":"info","message":"创建用户成功，手机号: 17800336829, 用户ID: 3","timestamp":"2025-04-07T12:50:26.715Z"}
+{"level":"error","message":"登录失败，手机号: 17800336829, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T12:50:26.716Z"}
+{"level":"error","message":"登录失败，openid: wx123456789, 错误: User.findByOpenid is not a function","timestamp":"2025-04-07T12:55:11.899Z"}
+{"level":"info","message":"创建用户成功，openid: wx123456789, 用户ID: 4","timestamp":"2025-04-07T13:01:20.209Z"}
+{"level":"error","message":"登录失败，openid: wx123456789, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T13:01:20.211Z"}
+{"level":"error","message":"登录失败，openid: wx123456789, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T13:06:44.015Z"}
+{"level":"error","message":"登录失败，openid: wx123456789, 错误: secretOrPrivateKey must have a value","timestamp":"2025-04-07T13:06:57.969Z"}
+{"level":"info","message":"用户登录成功，openid: wx123456789","timestamp":"2025-04-07T13:08:01.506Z"}
+{"level":"info","message":"用户登录成功，openid: wx123456789","timestamp":"2025-04-07T13:08:17.966Z"}
+{"level":"error","message":"创建用户档案失败，用户ID: undefined, 错误: Column 'user_id' cannot be null","timestamp":"2025-04-07T13:15:20.407Z"}
+{"level":"error","message":"八字诊断失败，用户ID: undefined, 错误: Column 'user_id' cannot be null","timestamp":"2025-04-07T13:15:20.409Z"}
+{"level":"info","message":"创建用户成功，openid: wx1234, 用户ID: 5","timestamp":"2025-04-07T13:26:53.486Z"}
+{"level":"info","message":"用户登录成功，openid: wx1234","timestamp":"2025-04-07T13:26:53.490Z"}
+{"level":"error","message":"创建用户档案失败，用户ID: 4, 错误: Incorrect datetime value: '1990-01-01T12:00:00Z' for column 'birth_date' at row 1","timestamp":"2025-04-07T13:38:05.001Z"}
+{"level":"error","message":"八字诊断失败，用户ID: 4, 错误: Incorrect datetime value: '1990-01-01T12:00:00Z' for column 'birth_date' at row 1","timestamp":"2025-04-07T13:38:05.003Z"}
+{"level":"error","message":"创建用户档案失败，用户ID: 4, 错误: Incorrect datetime value: '1990-01-01T12:00:00Z' for column 'birth_date' at row 1","timestamp":"2025-04-07T13:39:04.427Z"}
+{"level":"error","message":"八字诊断失败，用户ID: 4, 错误: Incorrect datetime value: '1990-01-01T12:00:00Z' for column 'birth_date' at row 1","timestamp":"2025-04-07T13:39:04.428Z"}
+{"level":"info","message":"用户登录成功，openid: wx123456789","timestamp":"2025-04-08T05:32:10.688Z"}
+{"level":"error","message":"登录失败，username: undefined, 错误: User.findByUsername is not a function","timestamp":"2025-04-08T05:54:27.220Z"}
+{"level":"error","message":"登录失败，username: undefined, 错误: User.findByUsername is not a function","timestamp":"2025-04-08T05:54:32.420Z"}
+{"level":"error","message":"创建用户失败，openid: [object Object], 错误: Column count doesn't match value count at row 1","timestamp":"2025-04-08T06:03:36.762Z"}
+{"level":"error","message":"微信登录失败，错误: Column count doesn't match value count at row 1","timestamp":"2025-04-08T06:03:36.766Z"}
+{"level":"error","message":"创建用户失败，username: newuser, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:27:54.048Z"}
+{"level":"error","message":"用户注册失败，username: newuser, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:27:54.070Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:29:11.752Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:29:11.753Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:30:49.784Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:30:49.787Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:31:24.726Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T08:31:24.727Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T10:47:03.479Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T10:47:03.496Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T10:47:33.890Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T10:47:33.896Z"}
+{"level":"error","message":"创建用户失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T11:01:05.195Z"}
+{"level":"error","message":"用户注册失败，username: admin, 错误: Data too long for column 'password' at row 1","timestamp":"2025-04-08T11:01:05.197Z"}
+{"level":"info","message":"创建用户成功，username: admin, 用户ID: 42","timestamp":"2025-04-08T11:02:21.118Z"}
+{"level":"info","message":"用户注册成功，username: admin","timestamp":"2025-04-08T11:02:21.181Z"}
+{"level":"info","message":"用户登录成功，username: admin","timestamp":"2025-04-08T11:03:38.376Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /src/views/index.html, 错误: No authorization token was found","timestamp":"2025-04-09T07:40:41.049Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /favicon.ico, 错误: No authorization token was found","timestamp":"2025-04-09T07:40:41.180Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:02:37.567Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:05:48.988Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:09:47.439Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:10:11.061Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/api, 错误: No authorization token was found","timestamp":"2025-04-10T07:26:06.056Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:32:24.058Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/bazi-analyze, 错误: No authorization token was found","timestamp":"2025-04-10T07:32:38.542Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /register, 错误: No authorization token was found","timestamp":"2025-04-16T12:01:45.879Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:03:26.384Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:15:28.007Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:18:05.792Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:20:42.091Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:29:13.151Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:56:55.989Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T12:58:19.155Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /auth/api/register, 错误: No authorization token was found","timestamp":"2025-04-16T13:04:37.730Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /auth/register, 错误: No authorization token was found","timestamp":"2025-04-16T13:18:58.379Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/register, 错误: No authorization token was found","timestamp":"2025-04-16T13:22:05.699Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/api/register, 错误: No authorization token was found","timestamp":"2025-04-16T13:40:36.992Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /api/api/register, 错误: No authorization token was found","timestamp":"2025-04-17T00:53:32.230Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:37:21.903Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:37:38.552Z"}
+{"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:38:11.554Z"}
