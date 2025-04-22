@@ -10,7 +10,7 @@
 ### 1. 用户认证
 
 #### 登录
-- **POST** `/api/auth/login`
+- **POST** `/api/login`
 - **请求体**:
   ```json
   {
@@ -27,7 +27,7 @@
   ```
 
 #### 注册
-- **POST** `/api/auth/register`
+- **POST** `/api/register`
 - **请求体**:
   ```json
   {

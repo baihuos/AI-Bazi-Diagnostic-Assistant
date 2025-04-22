@@ -1,6 +1,8 @@
 // 引入日志
 const logger = require('../config/logger');
-
+const Redis = require('ioredis');
+const redis = new Redis(process.env.REDIS_URL || 'redis://localhost:6379');
+const axios = require('axios'); // 用于调用支付接口
 // 简单内存存储（实际项目中建议使用 Redis）
 const requestCounts = {};
 

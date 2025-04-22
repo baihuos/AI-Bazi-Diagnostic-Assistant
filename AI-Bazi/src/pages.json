@@ -1,17 +1,15 @@
 {
-	// 组件自动引入规则
 	"easycom": {
-		// 是否开启自动扫描 @/components/$1/$1.vue 组件
 		"autoscan": true,
-		// 以正则方式自定义组件匹配规则
 		"custom": {
-			// uni-ui 规则如下配置
 			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
-			// 以 Xtx 开头的组件，在 components 目录中查找
 			"^Xtx(.*)": "@/components/Xtx$1.vue"
 		}
 	},
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
+		{
+			"path": "pages/login/register"
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -37,7 +35,6 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	// 设置 TabBar
 	"tabBar": {
 		"color": "#333",
 		"selectedColor": "#27ba9b",
@@ -58,12 +55,9 @@
 			}
 		]
 	},
-	//配置分包加载
 	"subPackages": [
 		{
-			//字目录
 			"root": "pagesMember",
-			//页面路径
 			"pages": [
 				{
 					"path": "settings/settings",
@@ -74,15 +68,12 @@
 			]
 		}
 	],
-	// 分包预下载规则
 	"preloadRule": {
-		// [!code ++]
 		"pages/my/my": {
-			// [!code ++]
-			"network": "all", // [!code ++]
+			"network": "all",
 			"packages": [
 				"pagesMember"
-			] // [!code ++]
-		} // [!code ++]
-	} // [!code ++]
+			] 
+		} 
+	} 
 }
