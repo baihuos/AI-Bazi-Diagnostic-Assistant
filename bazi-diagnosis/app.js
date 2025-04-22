@@ -11,6 +11,7 @@ const authRouter = require('./routes/auth');
 const baziRouter = require('./routes/bazi');
 const APIRouter = require('./routes/api');
 const paymentRouter = require('./routes/payment');
+const rateLimiter = require('./rateLimiter');
 // 引入中间件
 const { authMiddleware, authErrorHandler } = require('./middleware/auth');
 const errorHandler = require('./middleware/errorHandler');
@@ -22,6 +23,7 @@ app.use(cors({
   origin: process.env.CORS_ORIGIN,
   credentials: true
 }));
+app.use(rateLimiter);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(cors());
