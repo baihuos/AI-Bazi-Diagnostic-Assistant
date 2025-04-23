@@ -162,34 +162,3 @@
 {"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:37:21.903Z"}
 {"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:37:38.552Z"}
 {"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:38:11.554Z"}
-2025-04-22 14:47:34 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 14:49:13 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 14:51:10 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 14:51:12 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 14:54:13 [WARN]: JWT 认证失败，路径: /auth/login, 错误: No authorization token was found
-2025-04-22 14:54:17 [WARN]: JWT 认证失败，路径: /auth/login, 错误: No authorization token was found
-2025-04-22 14:54:20 [WARN]: JWT 认证失败，路径: /login, 错误: No authorization token was found
-2025-04-22 14:54:22 [WARN]: JWT 认证失败，路径: /login, 错误: No authorization token was found
-2025-04-22 14:54:27 [WARN]: JWT 认证失败，路径: /login, 错误: No authorization token was found
-2025-04-22 14:54:28 [WARN]: JWT 认证失败，路径: /login, 错误: No authorization token was found
-2025-04-22 14:55:06 [WARN]: JWT 认证失败，路径: /auth/login, 错误: No authorization token was found
-2025-04-22 14:55:07 [WARN]: JWT 认证失败，路径: /auth/login, 错误: No authorization token was found
-2025-04-22 14:55:21 [WARN]: JWT 认证失败，路径: /api/auth/login, 错误: No authorization token was found
-2025-04-22 14:55:23 [WARN]: JWT 认证失败，路径: /api/auth/login, 错误: No authorization token was found
-2025-04-22 15:05:31 [WARN]: JWT 认证失败，路径: /api/auth/login, 错误: No authorization token was found
-2025-04-22 15:05:33 [WARN]: JWT 认证失败，路径: /api/auth/login, 错误: No authorization token was found
-2025-04-22 17:30:47 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 17:31:36 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 17:31:36 [WARN]: JWT 认证失败，路径: /favicon.ico, 错误: No authorization token was found
-2025-04-22 17:31:44 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 17:31:44 [WARN]: JWT 认证失败，路径: /favicon.ico, 错误: No authorization token was found
-2025-04-22 17:32:41 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 17:34:02 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 17:36:43 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 17:36:45 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 18:06:34 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 18:06:35 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 18:08:22 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 18:08:24 [WARN]: JWT 认证失败，路径: /example, 错误: No authorization token was found
-2025-04-22 18:21:48 [ERROR]: [object Object]
-2025-04-23 17:19:59 [ERROR]: [object Object]
