@@ -162,3 +162,28 @@
 {"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:37:21.903Z"}
 {"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:37:38.552Z"}
 {"level":"warn","message":"JWT 认证失败，路径: /ws, 错误: No authorization token was found","timestamp":"2025-04-18T02:38:11.554Z"}
+2025-04-23 19:59:30 [WARN]: JWT 认证失败，路径: /api/auth/login, 错误: No authorization token was found
+2025-04-24 08:06:57 [INFO]: 用户登录成功,id:43,username: 杨帆
+2025-04-24 08:07:56 [INFO]: 用户登录成功,id:42,username: admin
+2025-04-24 08:08:29 [WARN]: JWT 认证失败，路径: /api/auth/register, 错误: No authorization token was found
+2025-04-24 08:08:56 [INFO]: 创建用户成功，username: 石辉, 用户ID: 46
+2025-04-24 08:08:56 [INFO] [UserID: 46]: 用户注册成功，username: 石辉
+2025-04-24 08:09:05 [INFO]: 用户登录成功,id:46,username: 石辉
+2025-04-24 08:17:46 [ERROR]: 八字计算失败，birthDate: 1990-01-01T12:00:00z, 错误: birthDate 格式错误，必须为 ISO8601 格式，例如 1990-01-01T12:00:00Z
+2025-04-24 08:17:46 [ERROR]: 八字诊断失败，userId: 46, 错误: birthDate 格式错误，必须为 ISO8601 格式，例如 1990-01-01T12:00:00Z
+2025-04-24 08:17:54 [INFO]: 八字计算成功，birthDate: 1990-01-01T12:00:00Z
+2025-04-24 08:18:05 [INFO]: 创建八字分析记录成功，userId: 46, 记录ID: 34
+2025-04-24 08:18:05 [INFO]: 八字诊断成功，userId: 46, 记录ID: 34
+2025-04-24 08:26:05 [ERROR]: 解析 ten_gods 失败，userId: 46, 数据: [object Object], 错误: "[object Object]" is not valid JSON
+2025-04-24 08:26:05 [INFO]: 获取八字记录列表成功，userId: 46
+2025-04-24 08:41:43 [INFO]: 创建八字分析记录成功，userId: 46, 记录ID: 35
+2025-04-24 08:41:43 [INFO]: 手动创建八字记录成功，userId: 46, 记录ID: 35
+2025-04-24 09:01:57 [ERROR]: 解析 ten_gods 失败，userId: 46, 数据: [object Object], 错误: "[object Object]" is not valid JSON
+2025-04-24 09:01:57 [ERROR]: 解析 ten_gods 失败，userId: 46, 数据: [object Object], 错误: "[object Object]" is not valid JSON
+2025-04-24 09:01:57 [INFO]: 获取八字记录列表成功，userId: 46
+2025-04-24 09:02:55 [INFO]: 八字计算成功，birthDate: 1995-05-15T08:00:00Z
+2025-04-24 09:03:12 [INFO]: 创建八字分析记录成功，userId: 46, 记录ID: 37
+2025-04-24 09:03:12 [INFO]: 八字诊断成功，userId: 46, 记录ID: 37
+2025-04-24 09:35:19 [INFO]: 八字计算成功，birthDate: 1995-05-15T08:00:00Z
+2025-04-24 09:35:33 [INFO]: 创建八字分析记录成功，userId: 46, 记录ID: 38
+2025-04-24 09:35:33 [INFO]: 八字模拟分析成功，userId: 46, birthDate: 1995-05-15T08:00:00Z
