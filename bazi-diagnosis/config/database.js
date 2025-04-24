@@ -24,5 +24,4 @@ const pool = mysql.createPool({
         console.error('数据库连接失败！❌ 错误信息：', error.message);
     }
 })();
-
 module.exports = pool;
