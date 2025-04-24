@@ -4,4 +4,8 @@
 2025-04-10 18:39:15 [ERROR]: 登录失败，username: 杨帆, 错误: id is not defined
 2025-04-10 20:16:35 [ERROR]: 登录失败，username: 杨帆, 错误: id is not defined
 2025-04-22 18:21:48 [ERROR]: [object Object]
-2025-04-23 17:19:59 [ERROR]: [object Object]
+2025-04-23 17:19:59 [ERROR]: [object Object]2025-04-24 08:17:46 [ERROR]: 八字计算失败，birthDate: 1990-01-01T12:00:00z, 错误: birthDate 格式错误，必须为 ISO8601 格式，例如 1990-01-01T12:00:00Z
+2025-04-24 08:17:46 [ERROR]: 八字诊断失败，userId: 46, 错误: birthDate 格式错误，必须为 ISO8601 格式，例如 1990-01-01T12:00:00Z
+2025-04-24 08:26:05 [ERROR]: 解析 ten_gods 失败，userId: 46, 数据: [object Object], 错误: "[object Object]" is not valid JSON
+2025-04-24 09:01:57 [ERROR]: 解析 ten_gods 失败，userId: 46, 数据: [object Object], 错误: "[object Object]" is not valid JSON
+2025-04-24 09:01:57 [ERROR]: 解析 ten_gods 失败，userId: 46, 数据: [object Object], 错误: "[object Object]" is not valid JSON

@@ -55,10 +55,13 @@ exports.register = async (req, res) => {
 // 账号密码登录
 exports.login = async (req, res) => {
     const { username, password } = req.body;
+    console.log(username,password);
     
     try {
         // 查找用户
         const user = await User.findByUsername(username);
+        console.log(user);
+        
         if (!user) {
             return res.status(400).json({
                 code: 400,

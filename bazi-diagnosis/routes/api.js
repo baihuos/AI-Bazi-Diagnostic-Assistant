@@ -122,7 +122,7 @@ router.post('/register', async (req, res) => {
 
       // 检查用户名是否已存在
       const [existingUsers] = await pool.query(
-          'SELECT * FROM user_login WHERE username = ?',
+          'SELECT * FROM users WHERE username = ?',
           [username]
       );
       if (existingUsers.length > 0) {
@@ -134,7 +134,7 @@ router.post('/register', async (req, res) => {
 
       // 插入用户
       await pool.query(
-          'INSERT INTO user_login (username, password) VALUES (?, ?)',
+          'INSERT INTO usl (username, password) VALUES (?, ?)',
           [username, hashedPassword]
       );
 
