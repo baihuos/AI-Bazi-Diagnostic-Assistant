@@ -1,6 +1,9 @@
 <template>
   <div class="register">
-    <image class="bg-image" lazy-load src="@/static/bg/bazi_logo.png" mode="aspectFill"></image>
+    <div class="particles">
+      <div v-for="n in 100" :key="n" class="particle"></div>
+    </div>
+    
     <div class="register-content">
       <div class="header">
         <text class="title">注册账号</text>
@@ -71,114 +74,112 @@ const goLogin = () => {
 
 <style scoped>
 .register {
-  min-height: 100vh;
-  position: relative;
-  background-color: #0a1922;
-}
-
-.bg-image {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
-  opacity: 0.8;
+  height: 100vh;
+  background: #1a0933;
+  overflow: hidden;
 }
 
 .register-content {
-  position: relative;
-  padding: 20px;
-  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 340px;
+  padding: 35px 25px;
+  background: rgba(45, 12, 77, 0.8);
+  box-shadow: 0 8px 32px rgba(138, 43, 226, 0.2);
+  border: 1px solid rgba(147, 112, 219, 0.2);
+  border-radius: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.header {
-  margin-bottom: 40px;
+  gap: 25px;
+  backdrop-filter: blur(10px);
 }
 
 .title {
-  color: #ffffff;
-  font-size: 24px;
+  color: #f8d3ff;
+  font-size: 28px;
   font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 182, 255, 0.3);
 }
 
 .form {
-  width: 100%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .input-group {
-  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
 }
 
 input {
   width: 100%;
-  height: 44px;
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  padding: 0 15px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(186, 85, 211, 0.3);
   color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 8px;
+  font-size: 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  padding: 0 15px;
+}
+
+input:focus {
+  border-color: rgba(186, 85, 211, 0.6);
+  background: rgba(147, 112, 219, 0.1);
+  box-shadow: 0 0 15px rgba(186, 85, 211, 0.2);
 }
 
 input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.5);
 }
 
-
 .register-btn {
-  width: 100%;
-  height: 44px;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid #ffffff;
-  border-radius: 22px;
+  width: 85%;
+  height: 45px;
+  background: linear-gradient(45deg, #9932cc, #8b008b);
+  border: none;
+  border-radius: 12px;
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+}
+
+.register-btn:active {
+  transform: scale(0.98);
+  background: linear-gradient(45deg, #8b008b, #9932cc);
+}
+
+.particle {
+  background: rgba(186, 85, 211, 0.6);
+  box-shadow: 0 0 6px rgba(186, 85, 211, 0.4);
 }
 
 .login-link {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
 }
 
 .login-btn {
-  color: #ffffff;
+  color: #da70d6;
   font-weight: 500;
-}
-
-/* 响应式适配 */
-@media screen and (max-width: 768px) {
-  .register-content {
-    padding: 15px;
-  }
-  
-  .title {
-    font-size: 20px;
-  }
-  
-  input {
-    font-size: 14px;
-  }
-  
-  .login-link {
-    font-size: 12px;
-  }
+  text-decoration: none;
 }
 
 /* 小程序特殊适配 */
 /* #ifdef MP-WEIXIN */
 .register-content {
-  padding-top: 40px;
+  transform: translate(-50%, -45%);
 }
 /* #endif */
 </style>
