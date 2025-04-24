@@ -122,7 +122,7 @@ router.post('/register', async (req, res) => {
 
       // 检查用户名是否已存在
       const [existingUsers] = await pool.query(
-          'SELECT * FROM user_login WHERE username = ?',
+          'SELECT * FROM users WHERE username = ?',
           [username]
       );
       if (existingUsers.length > 0) {
@@ -134,7 +134,7 @@ router.post('/register', async (req, res) => {
 
       // 插入用户
       await pool.query(
-          'INSERT INTO user_login (username, password) VALUES (?, ?)',
+          'INSERT INTO usl (username, password) VALUES (?, ?)',
           [username, hashedPassword]
       );
 
@@ -154,7 +154,7 @@ router.post('/login', async (req, res) => {
           return res.status(400).json({ message: '请填写用户名和密码' });
       }
       // 检查用户是否存在
-      const [users] = await pool.query('SELECT * FROM user_login WHERE username = ?', [username]);
+      const [users] = await pool.query('SELECT * FROM users WHERE username = ?', [username]);
       if (users.length === 0) {
           return res.status(400).json({ message: '用户不存在' });
       }
@@ -180,6 +180,12 @@ router.post('/login', async (req, res) => {
       console.error(error);
       res.status(500).json({ message: '服务器错误' });
   }
+});
+router.get('/example', (req, res) => {
+  res.json({
+      message: 'API调用成功',
+      rateLimitInfo: res.locals.rateLimitInfo
+  });
 });
 module.exports = router;
 
