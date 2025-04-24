@@ -6,20 +6,64 @@
 			"^Xtx(.*)": "@/components/Xtx$1.vue"
 		}
 	},
-	"pages": [ 
+	"pages": [
 		{
 			"path": "pages/login/register"
 		},
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "算算",
+				"navigationBarBackgroundColor": "#000000",
+				"navigationBarTextStyle": "white"
 			}
 		},
 		{
 			"path": "pages/login/login",
 			"style": {
 				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/login/start",
+			"style": {
+				"navigationBarTitleText": "开始"
+			}
+		},
+		{
+			"path": "pages/login/guide",
+			"style": {
+				"navigationBarTitleText": "引导"
+			}
+		},
+		{
+			"path": "pages/face/face",
+			"style": {
+				"navigationBarTitleText": "人脸识别"
+			}
+		},
+		{
+			"path": "pages/ActivityLogs/ActivityLogs",
+			"style": {
+				"navigationBarTitleText": "历史"
+			}
+		},
+		{
+			"path": "pages/Invitation/Invitation",
+			"style": {
+				"navigationBarTitleText": "邀请您的朋友"
+			}
+		},
+		{
+			"path": "pages/record/record",
+			"style": {
+				"navigationBarTitleText": "记录"
+			}
+		},
+		{
+			"path":"pages/signin/signin",
+			"style":{
+				"navigationBarTitleText":"每日签到"
 			}
 		},
 		{
@@ -32,17 +76,17 @@
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#000000",
+		"backgroundColor": "#000000"
 	},
 	"tabBar": {
 		"color": "#333",
-		"selectedColor": "#27ba9b",
-		"backgroundColor": "#fff",
+		"selectedColor": "#5e5c5c",
+		"backgroundColor": "#000000",
 		"borderStyle": "white",
 		"list": [
 			{
-				"text": "首页",
+				"text": "算算",
 				"pagePath": "pages/index/index",
 				"iconPath": "static/tabs/home_default.png",
 				"selectedIconPath": "static/tabs/home_selected.png"
@@ -60,9 +104,9 @@
 			"root": "pagesMember",
 			"pages": [
 				{
-					"path": "settings/settings",
+					"path": "pages/member/member",
 					"style": {
-						"navigationBarTitleText": "设置"
+						"navigationBarTitleText": "会员"
 					}
 				}
 			]
@@ -73,7 +117,7 @@
 			"network": "all",
 			"packages": [
 				"pagesMember"
-			] 
-		} 
-	} 
+			]
+		}
+	}
 }

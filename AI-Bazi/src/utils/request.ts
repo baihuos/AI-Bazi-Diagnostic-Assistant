@@ -59,7 +59,26 @@ class Request {
     // H5 端使用 Axios 默认适配器（xhr 或 fetch），无需显式设置
     // #endif
 
-    this.instance = axios.create(config);
+    // 检查 axios 是否可用，如果不可用则使用 uni.request 适配器
+    if (typeof axios !== 'undefined' && typeof axios.create === 'function') {
+      this.instance = axios.create(config);
+    } else {
+      // 如果 axios 不可用，创建一个模拟的 AxiosInstance
+      this.instance = {
+        request: (config) => uniAdapter(config),
+        get: (url, config) => uniAdapter({ ...config, method: 'get', url }),
+        delete: (url, config) => uniAdapter({ ...config, method: 'delete', url }),
+        head: (url, config) => uniAdapter({ ...config, method: 'head', url }),
+        post: (url, data, config) => uniAdapter({ ...config, method: 'post', url, data }),
+        put: (url, data, config) => uniAdapter({ ...config, method: 'put', url, data }),
+        patch: (url, data, config) => uniAdapter({ ...config, method: 'patch', url, data }),
+        defaults: {},
+        interceptors: {
+          request: { use: () => {}, eject: () => {} },
+          response: { use: () => {}, eject: () => {} }
+        }
+      } as AxiosInstance;
+    }
 
     // 请求拦截器
     this.instance.interceptors.request.use(
@@ -109,22 +128,38 @@ class Request {
             case 404:
               message = `请求地址出错: ${error.response.config.url}`;
               break;
+            case 408:
+              message = '请求超时';
+              break;
             case 500:
               message = '服务器内部错误';
               break;
+            case 501:
+              message = '服务未实现';
+              break;
+            case 502:
+              message = '网关错误';
+              break;
+            case 503:
+              message = '服务不可用';
+              break;
+            case 504:
+              message = '网关超时';
+              break;
+            case 505:
+              message = 'HTTP版本不受支持';
+              break;
             default:
-              message = `连接错误 ${error.response.status}`;
+              message = `连接出错(${error.response.status})!`;
           }
         } else {
-          message = '连接到服务器失败';
+          message = '网络连接异常，请稍后再试';
         }
-
         uni.showToast({
           title: message,
           icon: 'none',
           duration: 2000,
         });
-
         return Promise.reject(error);
       }
     );
@@ -151,4 +186,7 @@ class Request {
   }
 }
 
-export default new Request(config);
+// 创建请求实例
+const request = new Request(config);
+
+export default request;
