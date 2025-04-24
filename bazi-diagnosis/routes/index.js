@@ -9,7 +9,7 @@ const { baziSimulateValidationRules, validate } = require('../middleware/validat
 require('dotenv').config();
 
 router.get('/', (req, res) => {
-    res.json({ message: '欢迎使用 AI 八字诊断助手 API' });
+    res.json({ message: '欢迎使用 AI 八字诊断助手' });
 });
 
 router.post('/bazi-simulate', authMiddleware, baziSimulateValidationRules(), validate, async (req, res) => {
