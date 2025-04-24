@@ -36,7 +36,7 @@ exports.register = async (req, res) => {
             updated_at: user.updated_at
         };
 
-        logger.info(`用户注册成功，username: ${username}`);
+        logger.info(`用户注册成功，username: ${username}`, { action: 'register', userId: user.id },{ action: 'register' });
         res.json({
             code: 200,
             message: "注册成功",
@@ -59,7 +59,6 @@ exports.login = async (req, res) => {
     try {
         // 查找用户
         const user = await User.findByUsername(username);
-        console.log(user,1);
         if (!user) {
             return res.status(400).json({
                 code: 400,
@@ -93,7 +92,7 @@ exports.login = async (req, res) => {
             updated_at: user.updated_at
         };
 
-        logger.info(`用户登录成功，username: ${username}`);
+        logger.info(`用户登录成功,id:${user.id},username: ${username}`);
         res.json({
             code: 200,
             message: "登录成功",
